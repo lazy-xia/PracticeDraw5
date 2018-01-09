@@ -33,6 +33,11 @@ public class Practice04DispatchDrawLayout extends LinearLayout {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
+    }
+
+    @Override
+    protected void dispatchDraw(Canvas canvas) {
+        super.dispatchDraw(canvas);
         pattern.draw(canvas);
     }
 
